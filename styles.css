@@ -1,0 +1,421 @@
+/* Body */
+body {
+    font-family: Comic Sans MS, Comic Sans;
+    line-height: 1.6;
+    background-color: #F4F1EB;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #496A49;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: #496A49;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Nagłówek */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B9A6E;
+    padding: 20px 30px;
+    color: #fff;
+    vertical-align: middle;
+
+}
+
+header .logo {
+    margin-left: -10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 24px;
+    margin-left: 27px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Wprowadzenie */
+.intro {
+    background-color: #F4F1EB;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+/* Sekcja Zimowa Herbata */
+.winter-tea {
+    background-image: url('images/zimoweTlo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    z-index: 1;
+}
+
+.winter-tea h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.winter-tea-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.winter-tea img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.winter-tea-info {
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.winter-tea-info p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: #8B9A6E;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: #6b7b4f;
+}
+
+/* Sekcja polecanych herbat oraz menu*/
+.recommended-teas {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F4F1EB;
+}
+
+.tile,
+.tea-card {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tile h3,
+.tea-card h3 {
+    font-size: 20px;
+}
+
+.tile img,
+.tea-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tile p,
+.tea-card p {
+    font-size: 16px;
+}
+
+.tile:hover,
+.tea-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tea-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Sekcja menu */
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Strona O Nas */
+.about {
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* Kontener na zdjęcia */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 45%;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Strona Spis Książek */
+.books-list {
+    padding: 0px 30px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.books-list p,
+.contact p {
+    /* również p ze strony kontaktowej */
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.books-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.books-listli {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+/* Strona Kontaktowa */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Sekcja z informacjami kontaktowymi */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-item {
+    width: 250px;
+    text-align: left;
+}
+
+.info-item p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    resize: none;
+    overflow: auto;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Stopka */
+footer {
+    background-color: #606B56;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsywność - urządzenia mobilne */
+@media (max-width: 768px) {
+
+    /* Nagłówek */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    /* Sekcja Zimowa Herbata */
+    .winter-tea-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .winter-tea img {
+        width: 100%;
+    }
+
+    /* Karty (np. polecane herbaty, menu) */
+    .tea-cards,
+    .tile {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .tea-card,
+    .tile {
+        width: 100%;
+    }
+
+    /* Strona O Nas */
+    .images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    /* Kontakt */
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-item {
+        width: 100%;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    .contact-form label {
+        text-align: center;
+    }
+
+    /* Stopka */
+    footer {
+        padding: 20px;
+    }
+}
